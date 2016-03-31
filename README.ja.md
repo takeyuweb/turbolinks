@@ -450,7 +450,7 @@ Turbolinksは`<head>`内のアセットの追跡のみ考慮していて、ペ�
 
 > However, Turbolinks makes requests using `XMLHttpRequest`, which transparently follows redirects. There’s no way for Turbolinks to tell whether a request resulted in a redirect without additional cooperation from the server.
 
-しかしながら、Turbolinksはリダイレクトを透過的に追従し`XMLHttpRequest`を使ってリクエストを発行します。サーバからの特別な協力なしに要求がリダイレクトの結果に終わったかどうかTurbolinksに伝える方法はありません。
+しかしながら、Turbolinksはリダイレクトを透過的に追従する`XMLHttpRequest`を使ってリクエストを発行します。サーバからの特別な協力なしに要求がリダイレクトの結果に終わったかどうかTurbolinksに伝える方法はありません。
 
 > To work around this problem, send the `Turbolinks-Location` header in response to a visit that was redirected, and Turbolinks will replace the browser’s topmost history entry with the value you provide.
 
